@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1220px;
+  margin: auto;
+}
+
+body {
+  font-family: Noto Sans;
+}
+
+.header {
+  min-height: 1175px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 53px;
+  box-sizing: border-box;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-link {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.header-links {
+  display: flex;
+  gap: 55px;
+}
+
+@media (max-width: 616px) {
+  .header-menu {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 373px) {
+  .header-links {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+}
+
+.header-title {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 706px;
+  margin: auto;
+  margin-top: 138px;
+  position: relative;
+  z-index: 0;
+}
+
+.header-title::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 96px;
+  background: url("../images/line.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -18px;
+  right: -20px;
+  z-index: -1;
+}
+
+.header-subtitle {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #c6c0c0;
+  text-align: center;
+  max-width: 867px;
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+
+.input-wrapper {
+  display: block;
+  max-width: 493px;
+  position: relative;
+  margin: auto;
+}
+
+.input {
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 16px 19px;
+  box-sizing: border-box;
+  background: rgba(222, 222, 222, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 45px;
+}
+
+.input-button {
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  border: none;
+  background-color: #f08c00;
+  background-image: url("../icons/serch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+
+.info {
+  padding: 120px 0px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-title::after {
+    display: none;
+  }
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 368px;
+}
+
+.info-title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #2e2a2a;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.info-d {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #686161;
+}
+
+.katalog-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #2e2a2a;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.katalog-menu {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 470px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.katalog-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8585;
+  text-decoration: none;
+}
+
+.katalog-link:hover {
+  color: #2e2a2a;
+  transition: 0.1s;
+}
+
+.katalog-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.katalog-card {
+  width: 380px;
+  height: 393px;
+}
+
+.image-container {
+  background-color: #fbfbfb;
+  width: 380px;
+  height: 324px;
+}
+
+.katalog-image {
+  margin: 64px 92px;
+}
+
+.prices {
+  display: flex;
+}
+
+.no-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-decoration-line: line-through;
+  display: flex;
+  align-items: center;
+  color: #8c8585;
+  margin-left: 4px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  color: #2e2a2a;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #686161;
+  margin-top: 16px;
+}
